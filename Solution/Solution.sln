@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< .merge_file_a07956
 <<<<<<< HEAD
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D", "D\D.vcxproj", "{6FCD0949-F2F7-4EEA-9448-E180ADEAF37F}"
 EndProject
@@ -12,6 +13,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A", "A\A.vcxproj", "{96CBA8
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest1_A", "UnitTest1_A\UnitTest1_A.vcxproj", "{5A5B4A82-805D-405E-9CCE-6D2A6A9F6C9A}"
 >>>>>>> A
+=======
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "B", "B\B.vcxproj", "{A0798D29-04BD-48A9-AFE1-EF1810B5D704}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest_B", "UnitTest_B\UnitTest_B.vcxproj", "{BF03220A-A041-4F86-B654-0BD9C385385A}"
+>>>>>>> .merge_file_a08160
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +25,7 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< .merge_file_a07956
 <<<<<<< HEAD
 		{6FCD0949-F2F7-4EEA-9448-E180ADEAF37F}.Debug|Win32.ActiveCfg = Debug|Win32
 		{6FCD0949-F2F7-4EEA-9448-E180ADEAF37F}.Debug|Win32.Build.0 = Debug|Win32
@@ -38,6 +45,16 @@ Global
 		{5A5B4A82-805D-405E-9CCE-6D2A6A9F6C9A}.Release|Win32.ActiveCfg = Release|Win32
 		{5A5B4A82-805D-405E-9CCE-6D2A6A9F6C9A}.Release|Win32.Build.0 = Release|Win32
 >>>>>>> A
+=======
+		{A0798D29-04BD-48A9-AFE1-EF1810B5D704}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A0798D29-04BD-48A9-AFE1-EF1810B5D704}.Debug|Win32.Build.0 = Debug|Win32
+		{A0798D29-04BD-48A9-AFE1-EF1810B5D704}.Release|Win32.ActiveCfg = Release|Win32
+		{A0798D29-04BD-48A9-AFE1-EF1810B5D704}.Release|Win32.Build.0 = Release|Win32
+		{BF03220A-A041-4F86-B654-0BD9C385385A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF03220A-A041-4F86-B654-0BD9C385385A}.Debug|Win32.Build.0 = Debug|Win32
+		{BF03220A-A041-4F86-B654-0BD9C385385A}.Release|Win32.ActiveCfg = Release|Win32
+		{BF03220A-A041-4F86-B654-0BD9C385385A}.Release|Win32.Build.0 = Release|Win32
+>>>>>>> .merge_file_a08160
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
