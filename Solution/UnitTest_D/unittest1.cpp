@@ -10,19 +10,24 @@ namespace UnitTest_D
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(TestMethod_D)
 		{
 			// TODO:  在此输入测试代码
-			double a, b, c;
-			char buf1[10] = "0", buf2[10] = "0", buf3[10] = "0";
-			GetPrivateProfileString("div", "a", 0, buf1, sizeof(buf1), "../test.ini");
-			GetPrivateProfileString("div", "b", 0, buf2, sizeof(buf2), "../test.ini");
-			GetPrivateProfileString("div", "c", "0", buf3, sizeof(buf3), "../test.ini");
-			a = atof(buf1);
-			b = atof(buf2);
-			c = atof(buf3);
-
-			Assert::AreEqual(a, div(b, c));
+			int a, b, c, i;
+			char buf_a[10], buf_b[10], buf_c[10];
+			for (i = 0;i<5;i++)
+			{
+				sprintf(buf_a, "a[%d]", i);
+				sprintf(buf_b, "b[%d]", i);
+				sprintf(buf_c, "c[%d]", i);
+				a = GetPrivateProfileInt("div", buf_a, 0, "../test.ini");
+				b = GetPrivateProfileInt("div", buf_b, 0, "../test.ini");
+				c = GetPrivateProfileInt("div", buf_c, 0, "../test.ini");
+				Assert::AreEqual(a, divc(b, c));
+				a = 0;
+				b = 0;
+				c = 0;
+			}
 		}
 
 	};

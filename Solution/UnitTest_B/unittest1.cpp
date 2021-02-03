@@ -2,6 +2,7 @@
 #include "CppUnitTest.h"
 #include "../B/sub.h"
 #include "windows.h"
+#define _CRT_SECURE_NO_WARNINGS
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTest_B
@@ -10,19 +11,24 @@ namespace UnitTest_B
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(TestMethod_B)
 		{
 			// TODO:  在此输入测试代码
-			double  a, b, c;
-			char buf1[10] = "0", buf2[10] = "0", buf3[10] = "0";
-			GetPrivateProfileString("sub", "a", "0", buf1, sizeof(buf1), "../test.ini");
-			GetPrivateProfileString("sub", "b", "0", buf2, sizeof(buf2), "../test.ini");
-			GetPrivateProfileString("sub", "c", "0", buf3, sizeof(buf3), "../test.ini");
-			a = atof(buf1);
-			b = atof(buf2);
-			c = atof(buf3);
-
+			int a, b, c, i;
+			char buf_a[10], buf_b[10], buf_c[10];
+			for (i = 0;i<5;i++)
+			{
+				sprintf(buf_a, "a[%d]", i);
+				sprintf(buf_b, "b[%d]", i);
+				sprintf(buf_c, "c[%d]", i);
+				a = GetPrivateProfileInt("sub", buf_a, 0, "../test.ini");
+				b = GetPrivateProfileInt("sub", buf_b, 0, "../test.ini");
+				c = GetPrivateProfileInt("sub", buf_c, 0, "../test.ini");
 			Assert::AreEqual(a, sub(b, c));
+			a=0;
+			b=0;
+			c=0;
+			}
 		}
 
 	};

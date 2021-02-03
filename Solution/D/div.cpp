@@ -1,5 +1,14 @@
 #include "div.h"
-double div(double a, double b)
+int divc(int a, int b)
 {
-	return (((b >= -EPSINON) && (b <= EPSINON)) ? 0 : a / b);
+	if (b == 0)
+	{
+		return 0;
+	}
+	else if (a == MIN)
+	{
+		return MAX;
+	}
+	else
+	return a / b;
 }
